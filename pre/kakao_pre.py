@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 
-# 파일 불러오기
+# kakao 파일 불러오기
 kakao_pre = pd.read_csv('C:\pythonProject1\Weather_Recommand\data\kakao.csv' )
+print(kakao_pre)
+exit()
 
 # 366개의 행, 71개의 열
 # google_pre = google_pre.iloc[0:366, 0:71]
