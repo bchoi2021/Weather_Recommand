@@ -2,7 +2,6 @@ import pandas as pd
 
 # google trend data 파일 불러오기
 google_pre = pd.read_csv('C:\pythonProject1\Weather_Recommand\data\google.csv')
-print(google_pre)
 
 # 366개의 행, 71개의 열인 것을 확인할 수 있음
 # google_pre = google_pre.iloc[0:366, 0:71]
@@ -13,6 +12,9 @@ print(google_pre)
 # 1. column명 전처리
 google_pre_columns = google_pre.columns # column명 추출
 
+'''
+구글 데이터의 경우 데이터 수집 과정에서 ':(대한민국)' 이라는 키워드가 함께 포함된다. 키워드만 따로 추출하기 위해 ‘ : ’을 기준으로 글자를 분리하고, 앞의 글자만 다시 데이터 프레임에 넣는 방법으로 불필요한 문자를 삭제했다. 
+'''
 # 컬럼명에서 ':(대한민국)'이 있는 경우, 키워드만 나올 수 있도록 ':(대한민국)' 삭제
 columns_split = google_pre_columns.str.split(":")
 google_pre_columns = columns_split.str.get(0)
