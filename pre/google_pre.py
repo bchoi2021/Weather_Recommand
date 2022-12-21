@@ -2,6 +2,7 @@ import pandas as pd
 
 # google trend data 파일 불러오기
 google_pre = pd.read_csv('C:\pythonProject1\Weather_Recommand\data\google.csv')
+print(google_pre)
 
 # 366개의 행, 71개의 열인 것을 확인할 수 있음
 # google_pre = google_pre.iloc[0:366, 0:71]
