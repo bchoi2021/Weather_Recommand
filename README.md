@@ -10,15 +10,15 @@
 
 + **구조**
 
-  + 폴더: data (데이터를 모아 놓음), pre (전처리 과정을 모아 놓음)
+  + **폴더:** data (데이터를 모아 놓음), pre (전처리 과정을 모아 놓음)
   
-  + data 폴더
+  + **data 폴더**
     + 구글 트렌드 데이터인 google.csv
     + 카카오 데이터 트렌드 데이터인 kakao.csv
     + 네이버 데이터 랩 데이터인 naver.csv 
     + 파주, 의령군, 의성, 서울, 영광군, 장수, 제주, 홍성, 보은, 충주 10개의 지역별 일별 강수량 데이터와 기온 데이터
 
-  + pre 폴더
+  + **pre 폴더**
     + google.csv를 전처리한 googoe_pre.py
     + kakao.csv를 전처리한 kakao_pre.py
     + naver.csv를 전처리한 naver.py
